@@ -1,0 +1,10 @@
+label {
+    display: block;
+}
+
+button {
+    margin: 10px;
+    margin-left: 10px;
+    width: 90px;
+}
+

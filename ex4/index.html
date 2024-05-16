@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Insira Seu Dados</h1>
+    <div class="Form-Nome">
+        <label for="Nome Completo">Nome Completo:</label>
+        <input type="text">
+    </div>
+    <div class="Form-Email">
+        <label for="E-mail">E-mail:</label>
+        <input type="email">
+    </div>
+    <div class="Form-Tele">
+        <label for="Telefone">Telefone:</label>
+        <input type="tel" id="telefone">
+    </div>
+    <div class="Form-CPF">
+        <label for="CPF">CPF:</label>
+        <input type="tel" id="CPF" >
+    </div>
+    <div class="Form-Endereco">
+        <label for="Endereço">Endereço:</label>
+        <input type="text">
+    </div>
+    <div class="Form-CEP">
+        <label for="CEP">CEP:</label>
+        <input type="tel" id="CEP">
+    </div>
+        <button type="submit">Enviar</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#telefone').mask('(00) 00000-0000')
+            $('#CPF').mask('000.000.000.00')
+            $('#CEP').mask('00000-000')      
+        })
+    </script>
+    </body>
+</html>
