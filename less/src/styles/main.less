@@ -1,0 +1,35 @@
+@import "mapas.less";
+@breakpointMobile: ~"(max-width:767px)";
+@breakpointTablet: ~"(min-width:768px) and (max-width:1023px)";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+}
+
+header {
+    background-color: #colors[backgroundColors];
+    color: #colors[textColor];
+    }
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @breakpointMobile {
+        max-width: 70%;
+    }
+
+    @media @breakpointTablet {
+        max-width: 80%;
+    }
+}
+
