@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitão América: Guerra Civil</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Adicionando rolar suave para âncoras */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Estilos básicos para a página */
+        body {
+            background-color: #010f2e;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #010f2e, #ca0808);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            text-align: center;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #080808;
+        }
+
+        .sobre {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .sobre-content {
+            display: flex;
+            flex-direction: column;
+            max-width: 50%;
+        }
+
+        .sobre_o_filme {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: white;
+            text-align: left;
+        }
+
+        .sinopse {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: white;
+            text-align: left;
+        }
+
+        .images {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .trailer {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .trailer h2 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background: #000;
+            border-radius: 8px;
+            margin: 0 auto;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer {
+            background-color: #020b20;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #ca0808;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #ca0808;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #fff;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Capitão América: Guerra Civil</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#elenco">Elenco</a></li>
+                <li><a href="#trailer">Trailer</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre" class="sobre">
+        <div class="sobre-content">
+            <h2 class="sobre_o_filme">Sobre o Filme</h2>
+            <p class="sinopse">Capitão América: Guerra Civil é um filme de super-heróis lançado em 2016, <br> que explora a divisão entre os heróis Marvel após um conflito sobre a regulamentação dos super-heróis.</p>
+        </div>
+        <img class="images" src="/images/cwrcapa.jpg" alt="Imagem do filme Capitão América: Guerra Civil">
+    </section>
+
+    <section id="trailer" class="trailer">
+        <h2>Assista ao Trailer</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dKrVegVI0Us" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#elenco">Elenco</a></li>
+                    <li><a href="#trailer">Trailer</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: contato@capamerica.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Capitão América: Guerra Civil. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
